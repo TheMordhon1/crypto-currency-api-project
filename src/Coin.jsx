@@ -19,7 +19,7 @@ const Coin = ({
           <p className="coin-symbol">{symbol}</p>
         </div>
         <div className="coin-data">
-          <p className="coin-price">Rp.{current_price}</p>
+          <p className="coin-price">Rp.{current_price.toLocaleString()}</p>
           <p className="coin-volume">Rp.{market_cap.toLocaleString()}</p>
           {market_cap_change_percentage_24h < 0 ? (
             <p className="coin-percent red">
